@@ -32,21 +32,8 @@ class MyApp extends StatelessWidget {
     
     return Scaffold(
       backgroundColor: Colors.blue,
-      appBar: AppBar(
-        title: Text(title),
-        leading: const Icon(Icons.home),
-        actions: [
-          Icon(Icons.person),
-          Icon(Icons.access_time),
-        ],
-        bottom: PreferredSize(
-          preferredSize: Size.fromHeight(24), 
-          child: Text("Salut les codeurs"),
-          ),
-          elevation: 7,
-          centerTitle: true,
-      ),
-      body: Column(
+      body: SafeArea(
+       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const Spacer(
@@ -103,6 +90,7 @@ class MyApp extends StatelessWidget {
           ),
           const Spacer(),
         ],
+      )
       )
     );
   }
