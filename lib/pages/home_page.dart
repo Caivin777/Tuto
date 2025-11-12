@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required String title});
 
@@ -25,7 +26,9 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body:SingleChildScrollView( 
-      child: Container(
+      child: Column(
+        children: [
+            Container(
         color: Theme.of(context).colorScheme.inversePrimary,
         height: 150,
         child: Center(
@@ -63,18 +66,24 @@ class _HomePageState extends State<HomePage> {
                     "Commander",
                     style: TextStyle(color: Colors.white),
                   ),
-                    )
+               )
 
-                ),
-              ]
-          )
-            
-            ),
+             ),
+           ]
           ),
-        )
-      ),
+            
+          ),
+          ),
+
+          ),
+          ),
+          Text("Mon resto"),
+        ],
       )
-      
+       
+    
+
+    ),
     );
   }
 }
