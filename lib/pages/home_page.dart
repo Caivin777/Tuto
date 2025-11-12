@@ -61,28 +61,39 @@ class _HomePageState extends State<HomePage> {
                      color: Colors.pink,
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  child:Center(
-                        child:  Text(
+                  child:Center( 
+                    child :Text(
                     "Commander",
                     style: TextStyle(color: Colors.white),
                   ),
                )
-
-             ),
-           ]
+              ),
+            ]  
           ),
             
-          ),
-          ),
+        ),
+      ),
 
-          ),
-          ),
-          Text("Mon resto"),
+    ),
+  ),
+          Column( 
+            children: [ 
+              Row(
+              children: [
+                Text(
+            "En ce moment",
+            style: TextStyle(color: Colors.brown,fontSize: 25,fontWeight: FontWeight.bold),
+              ),
+              ],
+            ),
+            Card(
+              
+            )
+            ]
+            )
         ],
       )
-       
-    
-
+      
     ),
     );
   }
