@@ -87,7 +87,19 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             Card(
-              
+              margin: EdgeInsets.all(20),
+              clipBehavior: Clip.antiAlias,
+              child: Container(
+                child: Center(
+                  child: Column(
+                children: [
+                    Image.asset("assets/images/layer-burger.jpg"),
+                    Text("Une petite faim"),
+                    Text("Venez  personnaliser votre Burger")
+                ],
+              ),
+              )
+              )
             )
             ]
             )
